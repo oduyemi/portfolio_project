@@ -4,72 +4,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='bootstrap/css/bootstrap.css' type='text/css'>
-		<style type="text/css">
-        body{
-            font-family:"euclid triangle", "sf pro display", lato, sans-serif;
-            font-size:18px;
-        }
-
-        *{
-            box-sizing: border-box;
-        }
-
-		div{
-		
-		}
-
-		</style>
-    
-    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+		<link rel='stylesheet' href='css/style.css' type='text/css'>
+    <title>Opeyemi Oduyemi - Full Stack Developer</title>
 </head>
+
 <body>
+  <div class="preloader"></div>
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
+        <div class="col-sm-12" >
+          <span>kcdjbdcjnkcdank <a href="mailto:yhermii@gmail.com">Email</a></span>
+        </div>
+      </div>
+      <div class="row" id="home" data-aos="fade-up">
+        <div class="col-md-12">
+          <nav id="navigation" class="navbar px-5" style="position:sticky; top:0">
+            <a class="navbar-brand px-3" 
+          href="index.html">
+          <img src="images/logo/logo_white.svg" alt="logo" width="28%"/>
+          </a>
+            <ul class="nav nav-pills main_menu mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white"  href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white"  href="#portfolio">Porfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="https://hopyrane.hashnode.dev/" target="_blank">Blog</a>
+              </li>
+                <button class="btn btn-outline-light btn-lg mx-5" data-bs-target="#contactform" data-bs-toggle="modal" href="/" data-bs-toggle="modal"
+                data-bs-target="#contactmodal">contact Me
+                </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+         <!-- <div class="row d-flex flex-column" id="home" data-aos="fade-up" style="border:1px solid red">
+            <div class="col-sm-12" style="display:flex; justify-content:center; align-items:center; min-height:100vh; ">
+              <div class="main_head">
+            <div id="headmove">
+                <div data-depth="0.2">
+                    <div class="bg-right"></div>
+                </div>
+            </div>
+              <div class="heading_text">
+                <div class="heading_text_front">
+                    <h1>Hi there👋 I'm Opeyemi Oduyemi <br>
+                        Full Stack developer</h1>
+                </div>
+                <div class="heading_text_back">
+                    <h1>Hi there👋 I'm Opeyemi Oduyemi <br>
+                        Full Stack developer</h1>
+                </div>
+            </div>
+            
+            </div>
+            <div class="shape_fill"></div>
+            <div class="col-sm-12">
+              
+            </div>
+
             <div class="col-md">
-                <nav id="navigation" class="navbar px-5">
-                    <a class="navbar-brand px-3" 
-                    href="index.html">
-                    <img src="images/logo/logo_black.svg" alt="logo" width="30%"/>
-                </a>
-                    <ul class="nav nav-pills">
-                      <li class="nav-item">
-                        <a class="nav-link" style="color:black" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" style="color:black" href="portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" style="color:black" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" style="color:black" href="https://hopyrane.hashnode.dev/" target="_blank">Blog</a>
-                      </li>
-                    </ul>
-                    <button class="btn btn-outline-dark btn-lg px-5">Contact Me</button>
-                  </nav>
-            </div>
-        </div>
-
-        <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/code_babe.svg" alt="monochrome"/>
-
-
-                        
+              
             </div>
 
-        </div>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+          </div><-->
+             <div class="shape_fill"></div>
+          <div class="row justify-content-md-between align-items-center" id="about" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="images/right.svg" class="img-fluid" alt="right"/>
+            </div>
+            <div class="col-md me-5">
+              <h1 class="ms-5 my-3" style="font-size:48px; width:80%">turning ideas into<br>real life products<br>is my calling.</h1>
+              <p class="my-3 ms-5" style="width:60%">I am a full stack developer with experience in software development
+                using industry-level languages and frameworks. I have worked on several projects in
+                various industries including Marketing, Education, and E-Commerce. I am committed to
+                solving problems through intense research-driven processes that turn business innovations
+                into practical solutions through development.<br>
+                I have experience working with the MERN stacks, Javascript, React JS and I have advanced level mastery of the
+                majority of the languages, tools, and technologies used. I am proficient in working as a frontend and
+                backend developer.<br>I'm also a content creator, and photographer.
+              </p>
+            </div>
+            <div class="col-12 text-sm-center my-5">
+              <h1>RECENT WORK <span id="exp">EXPERIENCE</span></h1>
+              <table class="table caption-top">
+                <caption>List of users</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Lansrock</th>
+                    <th scope="col">UrBizEdge</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
 
 
 
@@ -85,40 +160,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
     </div>
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="modal fade" id="contactform" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 style="color:#000"  class="modal-title" id="exampleModalLabel" >Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <p style="color:#000">
+                Hi there👋<br>I'm waiting to hear from you. Fill in your details and I'll get back to you shortly.
+              </p>
+        <div>
+        <form action="" method="">
+          <div class="mb-3">
+            <label style="color:#000" class="form-label">Fullname</label>
+            <input class="form-control" type="text" name="full_name">
+          </div>
+          <div class="mb-3">
+            <label style="color:#000" class="form-label">Message</label>
+            <textarea style="color:#000" class="form-control" name="full_name"></textarea>
+          </div>
+            <button class="btn btn-outline-dark btn-lg">Submit</button>
+        </form>
+        </div>
+        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark"
+        data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
+  <script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    const scroller = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: false
+  });
 
+
+  var loader=document.getElementById("preloader");
+  window.addEventListener('load', function(){
+    loader.style.display="none";
+  })
+  </script>
 </body>
-
-<script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-
 </html>
