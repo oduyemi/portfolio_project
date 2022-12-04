@@ -20,132 +20,6 @@ body{
   background-size:15%;
 }
 
-#intro{
-  background-image: url(images/hero1.jpg);
-  background-position:center top;
-  background-size:cover;
-  
-}
-
-.wrapper{
-    display:flex;
-}
-.static_text{
-    font-size:40px;
-    font-weight:600;
-}
-
-.wrapper .dynamic_text{
-    margin-left:15px;
-    line-height:90px;
-    height:90px;
-    overflow:hidden;
-}
-.dynamic_text li{
-    list-style:none;
-    text-decoration: none;
-    color:red;
-    font-size:40px;
-    font-weight: 400;
-    position:relative;
-}
-
-.dynamic_text ::after{
-    content:"";
-    position: absolute;
-    left:0;
-    height:100%;
-    width:100%;
-    border-left:2px solid red;
-    animation:typing 3s steps(18) infinite;
-}
-
-keyframes{
-    40%,60%{
-        left:calc(100% + 30px);
-    }
-    100%{
-        left:0;
-    }
-}
-
-.overlay{
-  height:300px;
-  background-color:rgba(0,0,0,0.62);
-  width:100%;
-  margin:0;
-  height: 100vh;
-}
-.shape_fill{
-  fill:#fff;
-  height:200px;
-  -webkit-transform-origin:center;
-  -ms-transform-origin:center;
-  transform-origin:center;
-  -webkit-transform:rotateY(0deg);
-  transform:rotateY(0deg);
-}
-
-.heading_text_front {
-position: absolute;
-transform: translate(-50%, -50%);
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
--o-transform: translate(-50%, -50%);
-text-align: center;
-left: 50%;
-width: 90%;
-top: 50%;
-z-index: 4;
-}
-
-.heading_text_front h1 {
-text-transform: uppercase;
-color: transparent;
-font-weight: 600;
-font-size: 48px;
--webkit-text-stroke: 1px #fff;
-letter-spacing: 1px;
-}
-
-.heading_text_back {
-position: absolute;
-transform: translate(-50%, -50%);
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
--o-transform: translate(-50%, -50%);
-text-align: center;
-left: 50%;
-width: 90%;
-top: 50%;
-z-index: -1;
-}
-
-.heading_text_back h1 {
-text-transform: uppercase;
-color: #fff;
-font-weight: 600;
-font-size: 48px;
--webkit-text-stroke: 0px #fff;
-letter-spacing: 1px;
-}
-
-.main_head {
-position: relative;
-height: 100vh;
-overflow: hidden;
-z-index: -1;
-}
-
-.main_head .container {
-position: relative;
-}
-
-h1.title {
-font-size: 90px;
-}
 
 #exp{
 color: transparent;
@@ -155,6 +29,85 @@ font-size: 48px;
 letter-spacing: 1px;
 }
 
+.folio_content .folio_item {
+    margin-top: 100px;
+    position: relative;
+    padding: 0 20px;
+  }
+  
+  .folio_content .folio_item .img_folio {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .folio_content .folio_item .img_folio a {
+    cursor: none;
+  }
+  
+  .folio_content .folio_item .img_folio img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  
+  .folio_content .folio_item .img_folio:hover img {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+  
+  .folio_content .folio_item .text_folio h2.text-1 {
+    position: absolute;
+    color: transparent;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #fff;
+    z-index: 4;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  
+  .folio_content .folio_item .text_folio h2.text-3 {
+    position: absolute;
+    font-weight: 900;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #fff;
+    z-index: 4;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  
+  
+  .folio_content .folio_item .text_folio h2.text-2 {
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    z-index: 1;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  
 @media (min-width: 767.98px) and (max-width: 991.98px){
 .main_head h1{
     font-size: 50px;

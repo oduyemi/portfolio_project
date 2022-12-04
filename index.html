@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='bootstrap/css/bootstrap.css' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">   
 		<link rel='stylesheet' href='css/style.css' type='text/css'>
+
     <title>Opeyemi Oduyemi - Full Stack Developer</title>
 </head>
 
 <body>
   <div class="preloader"></div>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12" >
-          <span>kcdjbdcjnkcdank <a href="mailto:yhermii@gmail.com">Email</a></span>
-        </div>
-      </div>
-      <div class="row" id="home" data-aos="fade-up">
+      <div class="row" style="position:fixed; top:0; z-index: 100;" data-aos="fade-up" id="home">
         <div class="col-md-12">
-          <nav id="navigation" class="navbar px-5" style="position:sticky; top:0">
+          <nav id="navigation" class="navbar px-5">
             <a class="navbar-brand px-3" 
           href="index.html">
           <img src="images/logo/logo_white.svg" alt="logo" width="28%"/>
@@ -44,93 +41,158 @@
           </nav>
         </div>
       </div>
-         <!-- <div class="row d-flex flex-column" id="home" data-aos="fade-up" style="border:1px solid red">
-            <div class="col-sm-12" style="display:flex; justify-content:center; align-items:center; min-height:100vh; ">
-              <div class="main_head">
-            <div id="headmove">
-                <div data-depth="0.2">
-                    <div class="bg-right"></div>
-                </div>
-            </div>
-              <div class="heading_text">
-                <div class="heading_text_front">
-                    <h1>Hi there👋 I'm Opeyemi Oduyemi <br>
+         <div class="row" id="home" data-aos="fade-up">
+            <div class="col-md-5 mx-auto">
+                    <h1 class="mt-5" style="font-size:50px; -webkit-text-stroke: 0.1vw #fff; color: transparent;
+                    font-weight: 200; text-transform: lowercase; position:relative; top:200px">Opeyemi Oduyemi <br>
                         Full Stack developer</h1>
+                
+            </div>
+            <div class="col-md-6 d-none d-md-block mx-auto mt-5">
+               <img class="mt-5 mx-5" src="images/prog.svg" width="68%" style="position:relative; top:40px;" />
+                <div class="text-center mx-auto me-5 mt-5" style="position:relative; right:50px">
+                <span><a href="https://github.com/oduyemi/" target="_blank"><img src="images/git.svg" width="4%"></a></span>
+                <span><a href="https://www.linkedin.com/in/opeyemi-oduyemi-bba776124/" target="_blank"><img src="images/li.svg" width="4%"></a></span>
+                <span><a href="" target="_blank"><img src="images/ig.svg" width="4%"></a></span>
                 </div>
-                <div class="heading_text_back">
-                    <h1>Hi there👋 I'm Opeyemi Oduyemi <br>
-                        Full Stack developer</h1>
-                </div>
-            </div>
-            
-            </div>
-            <div class="shape_fill"></div>
-            <div class="col-sm-12">
-              
-            </div>
+          </div>
 
-            <div class="col-md">
-              
+          <div class="row mx-auto justify-content-md-between align-items-center mt-5" id="about" data-aos="fade-up">
+            <div class="col-md-5 mx-auto mt-5">
+              <img src="images/right.svg" class="img-fluid my-5" alt="right"/>
             </div>
-
-
-          </div><-->
-             <div class="shape_fill"></div>
-          <div class="row justify-content-md-between align-items-center" id="about" data-aos="fade-up">
-            <div class="col-md-5">
-              <img src="images/right.svg" class="img-fluid" alt="right"/>
-            </div>
-            <div class="col-md me-5">
-              <h1 class="ms-5 my-3" style="font-size:48px; width:80%">turning ideas into<br>real life products<br>is my calling.</h1>
-              <p class="my-3 ms-5" style="width:60%">I am a full stack developer with experience in software development
+            <div class="col-md-5 me-5 mt-5">
+              <h1 class="col-md-5 ms-5 mt-5" style="width:80%; font-size:50px; -webkit-text-stroke: 0.1vw #fff; color: transparent;
+              font-weight: 200; text-transform: lowercase">turning ideas into<br>real life products<br>is my calling.</h1>
+              <p class="col-md-5 mt-5 ms-5" style="width:60%">I am a full stack developer with experience in software development
                 using industry-level languages and frameworks. I have worked on several projects in
                 various industries including Marketing, Education, and E-Commerce. I am committed to
                 solving problems through intense research-driven processes that turn business innovations
                 into practical solutions through development.<br>
                 I have experience working with the MERN stacks, Javascript, React JS and I have advanced level mastery of the
                 majority of the languages, tools, and technologies used. I am proficient in working as a frontend and
-                backend developer.<br>I'm also a content creator, and photographer.
+                backend developer.
               </p>
             </div>
-            <div class="col-12 text-sm-center my-5">
-              <h1>RECENT WORK <span id="exp">EXPERIENCE</span></h1>
-              <table class="table caption-top">
-                <caption>List of users</caption>
+            <div class="col-md-10 mx-auto text-sm-center mt-5">
+              <h1 style="font-size:40px; width:80%; -webkit-text-stroke: 0.1vw #fff; color:transparent;
+              text-transform: lowercase; font-weight: 200">
+                RECENT WORK <span id="exp">EXPERIENCE</span></h1>
+              <table class="table text-center table-dark table-hover my-5">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Lansrock</th>
-                    <th scope="col">UrBizEdge</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col-md-3" style="font-size:32px">Lansrock</th>
+                    <th scope="col-md-3" style="font-size:32px">UrBizEdge</th>
+                    <th scope="col-md-3" style="font-size:32px">Company</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td>Front End Developer<br>(November 2020 - December 2021)</td>
+                    <td>Lead Developer<br>(January - October 2022)</td>
+                    <td>Full Stack Developer<br>(...till date)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-
           </div>
           
+          <div class="row mt-5">
+            <section class="folio_content mt-5">
+                  <div class="row d-md-flex justify-content-center" id="portfolio">
+                      <div class="col-md-12 mx-auto my-5">
+                          <div class="text-center">
+  
+                              <h2 style="font-size:40px; -webkit-text-stroke: 0.1vw #fff; color: transparent;
+                              font-weight: 200;">recent <span>&emsp13;Projects</span><br />(Q3-Q4 2022)</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="folio_item">
+  
+                          <div class="img_folio">
+                              <a class="load-spiral" href="https://urbizedge.com" target="_blank">
+                                  <img class="img-fluid" src="images/folio_content/bb.png" draggable="false" alt="">
+                              </a>
+                          </div>
+                          <div class="text_folio text-center">
+                              <h2 style="-webkit-text-stroke: 0.1vw #fff; color: transparent;
+                              font-weight: 200;">urbizedge</h2>
+                          </div>
+                      </div>
 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="folio_item">
+  
+                          <div class="img_folio cursorExplore">
+                              <a class="load-spiral" href="https://rufaddasmedicalsupplies.com" target="_blank">
+                                  <img class="img-fluid" src="images/folio_content/bc.png" draggable="false" alt="">
+                              </a>
+                          </div>
+                          <div class="text_folio text-center">
+                              <h2 style="-webkit-text-stroke: 0.1vw #fff; color: transparent;
+                              font-weight: 200;">rufaddas</h2>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="folio-item">
+  
+                          <div class="img_folio cursorExplore">
+                              <a class="load-spiral" href="https://liveeventsolutions.com.ng" target="_blank">
+                                  <img class="img-fluid" src="images/folio_content/be.png" draggable="false" alt="">
+                              </a>
+                          </div>
+                          <div class="text_folio text-center">
+                              <h2 style="-webkit-text-stroke: 0.1vw #fff; color: transparent;
+                              font-weight: 200;">live event</h2>
+                          </div>
+                      </div>
+                      </div>                             
+                          
+                    </div>
+  
+                  </div>
+  
+                <div class="row text-center">
+                      <div class="col-md-12 mx-5 my-5">
+                        <h2 style="font-size:48px; width:80%; -webkit-text-stroke: 0.3vw #fff; color: transparent;font-weight: 200;">
+                          let's talk about your project</h2>
+                        <p style="width:70%">
+                          let's talk about your project
+                          If you’ve made it down this far, why not send me an email or hit the Contact Me button below?
+                          I’m currently booking in new projects starting from March so don’t miss out! Let’s make something amazing.</p>
+                          
+                          <div class="mx-auto">
+                            <button class="btn btn-outline-light btn-lg" data-bs-target="#contactform" data-bs-toggle="modal" href="/" data-bs-toggle="modal"
+                              data-bs-target="#contactmodal">contact Me
+                            </button>
+                          </div>
+                      </div>
+                  </div>
+            </section>
+          </div>
+          
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
 
 
 
@@ -234,12 +296,6 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
   <script>
-    const scroller = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: false
-  });
-
-
   var loader=document.getElementById("preloader");
   window.addEventListener('load', function(){
     loader.style.display="none";
